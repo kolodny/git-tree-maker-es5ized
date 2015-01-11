@@ -1,6 +1,6 @@
 {
   "name": "git-tree-maker-es5",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Git Tree Maker",
   "main": "src/es5/index.js",
   "main-es6": "src/es6/index.js",
@@ -8,7 +8,7 @@
     "test": "mocha src/es5/test"
   },
   "bin": {
-    "git-tree-maker": "./src/es5/bin/git-tree-maker"
+    "git-tree-maker": "./src/es5/bin/git-tree-maker.js"
   },
   "author": "Moshe Kolodny",
   "license": "MIT",
