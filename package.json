@@ -1,6 +1,6 @@
 {
   "name": "git-tree-maker-es5",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Git Tree Maker",
   "main": "src/es5/index.js",
   "main-es6": "src/es6/index.js",
@@ -14,10 +14,11 @@
   "license": "MIT",
   "dependencies": {
     "co": "^3.1.0",
+    "co-exec": "^1.1.0",
     "commander": "^2.3.0",
+    "core-js": "^0.4.3",
     "mkdirp": "^0.5.0",
-    "thunkify": "^2.1.2",
-    "core-js": "^0.4.3"
+    "thunkify": "^2.1.2"
   },
   "devDependencies": {
     "co-exec": "^1.1.0",
