@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;;IAAO,YAAY,2BAAM,QAAQ;;iBAClB,YAAY","file":"index.js","sourcesContent":["import gitTreeMaker from './lib/'\nexport default gitTreeMaker;"],"sourceRoot":"/source/"}

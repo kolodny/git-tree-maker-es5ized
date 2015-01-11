@@ -1,32 +1,31 @@
 {
-  "name": "git-tree-maker",
+  "name": "git-tree-maker-es5",
   "version": "0.0.3",
   "description": "Git Tree Maker",
   "main": "src/es5/index.js",
   "main-es6": "src/es6/index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha --harmony"
+    "test": "mocha src/es5/test"
   },
   "bin": {
-    "git-tree-maker": "./bin/git-tree-maker"
+    "git-tree-maker": "./src/es5/bin/git-tree-maker"
   },
   "author": "Moshe Kolodny",
   "license": "MIT",
   "dependencies": {
     "co": "^3.1.0",
-    "co-exec": "^1.1.0",
     "commander": "^2.3.0",
     "mkdirp": "^0.5.0",
     "thunkify": "^2.1.2",
-    "traceur": "0.0.60"
+    "core-js": "^0.4.3"
   },
   "devDependencies": {
-    "grunt-traceur": "^0.2.3",
+    "co-exec": "^1.1.0",
     "gulp": "^3.8.7",
+    "gulp-6to5": "^2.0.0",
+    "gulp-concat": "^2.4.3",
     "gulp-header": "^1.0.5",
-    "gulp-remove-lines": "^0.1.0",
     "gulp-sourcemaps": "^1.1.4",
-    "gulp-traceur": "^0.13.0",
     "mocha": "^1.21.4",
     "rimraf": "^2.2.8",
     "tmp": "0.0.24"
