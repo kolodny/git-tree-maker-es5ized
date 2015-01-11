@@ -1,6 +1,6 @@
 {
   "name": "git-tree-maker-es5",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Git Tree Maker",
   "main": "src/es5/index.js",
   "main-es6": "src/es6/index.js",
