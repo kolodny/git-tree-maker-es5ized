@@ -1,12 +1,10 @@
 "use strict";
-require('core-js/shim');
-require('regenerator/runtime')
-"use strict";
-
 var _interopRequire = function (obj) {
   return obj && (obj["default"] || obj);
 };
 
+require("core-js/shim");
+require("regenerator/runtime");
 var assert = _interopRequire(require("assert"));
 
 var gitTreeMaker = _interopRequire(require("../lib/"));

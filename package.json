@@ -1,6 +1,6 @@
 {
   "name": "git-tree-maker-es5",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Git Tree Maker",
   "main": "src/es5/index.js",
   "main-es6": "src/es6/index.js",
@@ -26,6 +26,7 @@
     "gulp-concat": "^2.4.3",
     "gulp-header": "^1.0.5",
     "gulp-sourcemaps": "^1.1.4",
+    "gulp-transform-head": "0.0.1",
     "mocha": "^1.21.4",
     "rimraf": "^2.2.8",
     "tmp": "0.0.24"

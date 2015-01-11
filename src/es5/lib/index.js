@@ -1,8 +1,4 @@
 "use strict";
-require('core-js/shim');
-require('regenerator/runtime')
-"use strict";
-
 var _interopRequire = function (obj) {
   return obj && (obj["default"] || obj);
 };
@@ -116,6 +112,8 @@ var createTree = regeneratorRuntime.mark(function createTree(tree, lastHash) {
   }, createTree, this);
 });
 
+require("core-js/shim");
+require("regenerator/runtime");
 var co = _interopRequire(require("co"));
 
 var exec = _interopRequire(require("co-exec"));

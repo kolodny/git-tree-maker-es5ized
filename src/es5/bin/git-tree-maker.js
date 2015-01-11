@@ -1,13 +1,12 @@
-"use strict";
-require('core-js/shim');
-require('regenerator/runtime')
-"use strict";
+#!/usr/bin/env node
 
+"use strict";
 var _interopRequire = function (obj) {
   return obj && (obj["default"] || obj);
 };
 
-//#!/usr/bin/env node --harmony
+require("core-js/shim");
+require("regenerator/runtime");
 
 var program = _interopRequire(require("commander"));
 
