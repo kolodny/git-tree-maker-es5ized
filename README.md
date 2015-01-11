@@ -1,25 +1,47 @@
-es6-module-boilerplate
-====
-
-use this as a starting point for creating es6 modules that have a build script to make an es5 version that gets used by default.
-
-Notice package.json has these lines
-```js
-"main": "src/es5/index.js",
-"main-es6": "src/es6/index.js",
- ```
-
-keep this format, including the dir structure so that it's easy to use with something like [require-es6](https://www.npmjs.org/package/require-es6)
-
-
-The workflow would look something like this
-```bash
-git clone https://github.com/kolodny/es6-module-boilerplate
-rm -rf .git
-git init
-npm install
-npm init
-```
-
-Ideas and pull requests welcomed
+Git Tree Maker
 ===
+
+### Usage:
+
+```js
+var gitTreeMaker = require('git-tree-maker');
+var co = require('co');
+co(function *(){
+  var dir = '/tmp/gittreepreview';
+  var tree = {
+    c1: {
+      c2: {
+        c5: {
+          c6: {}
+        },
+        "c3.server": {
+          c4: {
+            c10: {}
+          }
+        },
+        "c8.client": {
+          c9: {}
+        }
+      }
+    }
+  }
+  yield gitTreeMaker(dir, tree);
+})();
+```
+/tmp/gittreepreview will now contain something like this ![tree](http://i.imgur.com/uEe2ojl.png)
+
+
+same as http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases
+
+
+### command line usage
+
+    npm install -g git-tree-maker
+    git-tree-maker <dir> <tree>
+
+    # git-tree-maker tester '{"c1":{"c2":{"c5":{"c6":{}},"c3.server":{"c4":{"c10":{}}},"c8.client":{"c9":{}}}}}'
+
+Or
+
+    npm install git-tree-maker
+    node_modules/.bin/git-tree-maker <dir> <tree>
