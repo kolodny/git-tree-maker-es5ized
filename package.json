@@ -1,6 +1,6 @@
 {
   "name": "git-tree-maker-es5",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Git Tree Maker",
   "main": "src/es5/index.js",
   "main-es6": "src/es6/index.js",
@@ -18,6 +18,7 @@
     "commander": "^2.3.0",
     "core-js": "^0.4.3",
     "mkdirp": "^0.5.0",
+    "regenerator": "^0.8.3",
     "thunkify": "^2.1.2"
   },
   "devDependencies": {
