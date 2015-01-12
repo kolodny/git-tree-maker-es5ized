@@ -39,7 +39,7 @@ same as http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases
     npm install -g git-tree-maker
     git-tree-maker <dir> <tree>
 
-    # git-tree-maker tester '{"c1":{"c2":{"c5":{"c6":{}},"c3.server":{"c4":{"c10":{}},"c8.client":{"c9":{}}}}}}'
+    # git-tree-maker /tmp/gittreepreview '{"c1":{"c2":{"c5":{"c6":{}},"c3.server":{"c4":{"c10":{}},"c8.client":{"c9":{}}}}}}'
 
 Or
 
